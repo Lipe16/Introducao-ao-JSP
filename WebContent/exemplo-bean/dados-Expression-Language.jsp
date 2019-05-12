@@ -6,15 +6,14 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Exemplo de uso de bean</title>
+<title>Insert title here</title>
 </head>
 <body>
-	<%= calcula.calcula(8) %>
-	
-	<form action="dados-Expression-Language.jsp" method="post">
-		<input name="nome" id="nome" type="text">
-		<input name="sobrenome" id="sobrenome" type="text">
-		<input type="submit" value="enviar">
-	</form>
+
+<jsp:setProperty property="*" name="calcula"/>
+
+
+	Nome: ${param.nome}
+
 </body>
 </html>
